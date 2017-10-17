@@ -1,4 +1,4 @@
-/*var students = [{
+var students = [{
  name: 'Liz',
  age: 25,
  city: 'Boulder'
@@ -21,31 +21,30 @@
 }];
 
 //1
-for(var i=0; i < students.length; i++) {
-	console.log(students[i].age);
+for (var key in students) {
+	console.log(students[key].age)
 }
 
 //2
-for (var i =0; i < students.length; i++) {
-	var namePlace = students[i].name +','+students[i].city;
-	console.log(namePlace);
+for(var key in students) {
+	console.log(students[key].name + ',' + students[key].city)
 }
 
 //3
-for(var i=0; i < students.length; i++) {
-	if (students[i].city === 'Boulder') {
-	var string = students[i].name + ' is from ' + students[i].city;
+for(var key in students) {
+	if(students[key].city === 'Boulder') {
+		console.log(students[key].name + ' is from ' + students[key].city);
 	}
-	console.log(string);
 }
 
 //4
-for (var i=0; i < students.length; i++) {
-	if (students[i].age > 25) {
-		console.log(students[i].name + ' is older than 25');
+for (var key in students) {
+	if(students[key].age > 25) {
+		console.log(students[key].name + ' is older than 25');
 	}
 }
-*/
+// Loop Practice  #4
+
 var months = [{
     name: 'January',
     days: 31
@@ -87,25 +86,8 @@ var months = [{
 //5
 for(var key in months) {
 	for(var i =1; i < months[key].days; i++)
-
 	console.log(months[key].name + [i])
 }
-// for (var i =0; i < months.length; i++) {
-// 	for(var j=1; j<31; j++) {
-// 		console.log(months[i].name + ' ' + months.j);
-	
-// 	}
-// }
 
+//6
 
-/*
-function getAge(obj) {
-	var ages =[];
-	for (var i in obj['age']) {
-	for (var key in obj[i])
-		ages.push(i);
-	}
-	return ages;
-}
-console.log(getAge(students));
-*/
