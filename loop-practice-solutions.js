@@ -1,3 +1,4 @@
+/*
 var students = [{
  name: 'Liz',
  age: 25,
@@ -83,11 +84,19 @@ var months = [{
     days: 31
 }];
 
-//5
+//1
 for(var key in months) {
 	for(var i =1; i < months[key].days; i++)
 	console.log(months[key].name + [i])
 }
+*/
+//2
+for (var j = 0; j < 24; j++) {
+	for (var x = 0; x < 60; x++ ) {
+		for (var y = 0; y < 60; y++) {
+			console.log([j] + ':' + [x] + ':' + [y])
+	   }
+	}
+  }
 
-//6
 
