@@ -1,4 +1,4 @@
-var students = [{
+/*var students = [{
  name: 'Liz',
  age: 25,
  city: 'Boulder'
@@ -45,7 +45,7 @@ for (var i=0; i < students.length; i++) {
 		console.log(students[i].name + ' is older than 25');
 	}
 }
-
+*/
 var months = [{
     name: 'January',
     days: 31
@@ -85,11 +85,17 @@ var months = [{
 }];
 
 //5
-for (var i =0; i<months.length; i++) {
-	for (var j = 1; j < months[i].days; j++){
-		console.log(months[i].name  + months[j].days)
-	}
+for(var key in months) {
+	for(var i =1; i < months[key].days; i++)
+
+	console.log(months[key].name + [i])
 }
+// for (var i =0; i < months.length; i++) {
+// 	for(var j=1; j<31; j++) {
+// 		console.log(months[i].name + ' ' + months.j);
+	
+// 	}
+// }
 
 
 /*
